@@ -1,0 +1,156 @@
+
+***************
+ex00: ft_strdup
+***************
+
+"The strdup() function allocates sufficient memory for a copy of the string s1,
+does the copy, and returns a pointer to it. The pointer may subsequently be 
+used as an argument to the function free(3)."
+
+Como ejemplo tomamos la cadena: Hola amigo
+
+Vamos a crear una copia dinámica de la cadena fuente (cadena objetivo).
+La función va a devolver un puntero a la cadena fuente.
+
+Imprimimos el puntero de la copia: Hola amigo
+
+Imprimimos el puntero de la copia con la función original: Hola amigo
+
+
+***************
+ex01: ft_range
+***************
+
+Escriba una función ft_range que devuelva un array de int. Este array de int
+contendrá todos los valores entre min y max.
+
+Min incluido, Max excluido.
+
+Si el valor min es superior o igual al valor max, se devolverá un puntero nulo.
+
+Vamos a crear un array de int -> ft_range(1, 10): 1 2 3 4 5 6 7 8 9 
+
+Vamos a crear un array de int -> ft_range(5, 25): 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 
+
+Vamos a crear un array de int -> ft_range(-5, 10): -5 -4 -3 -2 -1 0 1 2 3 4 5 6 7 8 9 
+
+Vamos a crear un array de int -> ft_range(-15, -5): -15 -14 -13 -12 -11 -10 -9 -8 -7 -6 
+
+***************
+ex02: ft_ultimate_range
+***************
+
+Escriba una función ft_ultimate_range que asigne memoria y datos a un array
+de int. Este array de int contendrá todos los valores entre min y max.
+
+Min includio, max excluido.
+
+Devolverá el tamaño de range (o -1 en el caso de problemas).
+
+Si el valor min es superior o igual al valor max, range apuntará a NULL y retornará 0.
+
+Vamos a crear un array de int -> ft_ultimate_range(range, -5, 55): -5 -4 -3 -2 -1 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 
+
+El tamaño del range es: 60
+
+Vamos a crear un array de int -> ft_ultimate_range(range, 0, 13): 0 1 2 3 4 5 6 7 8 9 10 11 12 
+
+El tamaño del range es: 13
+
+***************
+ex03: ft_strjoin
+***************
+
+Escriba una función que concatene el conjunto de cadenas de caracteres apuntadas
+por strs, separándolas por sep.
+
+size representa el tamaño de strs.
+
+Si size vale 0, habrá que retornar una cadena de caracteres vacía que podemos free()
+
+La frase a concatenar es: ho ho ho ho ho ho 
+Los separadores son: "-|-"
+
+El resultado es: ho-|-ho-|-ho-|-ho-|-ho-|-ho
+
+La frase a concatenar es: SU SU SU SU SU 
+Los separadores son: ""
+
+El resultado es: SUSUSUSUSU
+
+La frase a concatenar es: hola que tal te va 
+Los separadores son: "-|_|-"
+
+El resultado es: hola-|_|-que-|_|-tal-|_|-te-|_|-va
+
+La frase a concatenar es: (null) 
+Los separadores son: "-|_|-"
+
+El resultado es: (null)
+
+***************
+ex05: ft_split
+***************
+
+Escriba una función que divida una cadena de caracteres en función de otra cadena de caracteres
+Habrá que utilizar cada carácter de la cadena charset como separador.
+
+La función retorna un array donde cada uno de sus elementos contiene la dirección
+de una cadena de caracteres comprendida entre dos separadores. El último elemento
+del array tendrá que ser igual a 0 para indicar el final del array.
+
+Su array no puede tener cadenas vacías. Saque las conclusiones pertinentes.
+
+La cadena que se transmitirá no será modificable.
+
+
+
+Supongamos el siguiente string: "i  i     Un---- ---a o   ,  ,    ia,-9-ia,  o   ,     i,-.-,  o--o i i"
+
+Supongamos los siguientes separadores: ",- "
+i, i, Un, a, o, ia, 9, ia, o, i, ., o, o, i, i, 
+
+
+Supongamos el siguiente string: "o- iii-o"
+
+Supongamos los siguientes separadores: " ,-"
+
+o, iii, o, 
+
+
+Supongamos el siguiente string: "u5QxYc0UrDm0AAhy sHZABT  Wl SlCL1"
+
+Supongamos los siguientes separadores: "s    pw82Te"
+
+u5QxYc0UrDm0AAhy, HZAB, Wl, SlCL1, 
+
+
+Supongamos el siguiente string: "                         "
+
+Supongamos los siguientes separadores: "     "
+
+
+
+
+
+Supongamos el siguiente string: "69yXE"
+
+Supongamos los siguientes separadores: "69yXE"
+
+
+
+
+
+Supongamos el siguiente string: "Xnngbz7yrvMKDEoicdM2kTQJEqaaVFuYZadnBQrp1k6b"
+
+Supongamos los siguientes separadores: "KbFuG"
+
+Xnng, z7yrvM, DEoicdM2kTQJEqaaV, YZadnBQrp1k6, 
+
+
+
+Supongamos el siguiente string: "Xnngbz7yrvMKDEoicdM2kTQJEqaaVFuYZadnBQrp1k6m"
+
+Supongamos los siguientes separadores: "KbFuG"
+
+Xnng, z7yrvM, DEoicdM2kTQJEqaaV, YZadnBQrp1k6m, 

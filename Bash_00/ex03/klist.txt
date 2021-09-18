@@ -1,0 +1,5 @@
+Credentials cache: API:FBF8EDE2-CAF2-4A87-976B-A6C90DEBBEF6
+        Principal: dpenas-u@42MADRID.COM
+
+  Issued                Expires               Principal
+Aug  4 11:36:37 2021  Aug  4 21:36:37 2021  krbtgt/42MADRID.COM@42MADRID.COM
